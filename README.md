@@ -34,20 +34,20 @@ The analysis uses municipality–month panel data (2011–2017) including:
 ## Methods
 
 **Outcome:**  
-- Average tortilla price at the municipality–month level  
+- Average tortilla price at the municipality–month level (Mexico's National System of Information and Market Integration - NSIMI)
 
 **Model:**  
 - Gradient Boosting (XGBoost)
 
 **Baseline Predictors:**
-- National maize price  
+- National maize price (Mexico's National System of Information and Market Integration - NSIMI) 
 - Log population  
 - Year and month indicators  
 
 **Extended Predictors:**
 - All baseline predictors  
 - Illegal oil tap count  
-- Fuel pipeline indicator  
+- Fuel pipeline indicator (Franco 2023)
 
 **Validation Strategy:**
 - Time-based train/test split  
@@ -66,6 +66,12 @@ Adding illegal oil tap indicators improved out-of-sample predictive performance 
 This suggests that infrastructure-disruption indicators may contain additional predictive signal beyond traditional economic inputs.
 
 ---
+
+## References
+
+Franco-Vivanco, Edgar, Cesar B. Martinez-Alvarez, and Ivan Flores Martínez. "Oil theft and violence in Mexico." Journal of Politics in Latin America 15.2 (2023): 217-236.
+
+Mexico’s National System of Information and Market Integration (SNIIM), Secretaría de Economía (2026), Agricultural and wholesale price data accessed from https://www.economia-sniim.gob.mx/i_inf_disp.asp on March 1, 2026. 
 
 ## Notes
 
