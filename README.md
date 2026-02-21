@@ -29,6 +29,8 @@ The analysis uses municipality–month panel data (2011–2017) including:
 - **Fuel pipeline indicator**
 - **Year and month identifiers**
 
+> **Note:** Raw data files are not included in this repository. To reproduce the analysis, place the required datasets inside a `data/` directory at the project root.
+
 ---
 
 ## Methods
